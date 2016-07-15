@@ -31,7 +31,7 @@
                 <td colspan="2" align="center">
                     <input type="submit" value="送出" />
                     <input type="reset" value="取消" />
-                    <input type="button" value="回上一頁" onclick="window.location='/'"/>
+                    <input type="button" value="回上一頁1111" onclick="window.location='/'"/>
                 </td>
             </tr>
         </table>
