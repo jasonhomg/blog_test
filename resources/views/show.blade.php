@@ -29,7 +29,7 @@
             </tr>
             <tr>
                 <td colspan="2" align="center">
-                    <input type="submit" value="送出" />
+                    <input type="submit" value="送出11" />
                     <input type="reset" value="取消" />
                     <input type="button" value="回上一頁1111" onclick="window.location='/'"/>
                 </td>
