@@ -1,0 +1,37 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;
+    font-family: '標楷體';
+}
+
+.container {
+    text-align: center;
+    display: table;
+    vertical-align: top;
+    height: 100%;
+}
+
+.content {
+    text-align: center;
+    display: inline-block;
+}
+
+.title {
+    font-size: 96px;
+}
+.bottom {
+    text-align: center;
+    vertical-align: bottom;
+    display: table-footer-group;
+}
+.div_box {
+    display: none;
+}
