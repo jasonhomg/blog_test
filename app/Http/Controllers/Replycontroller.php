@@ -25,17 +25,17 @@ class Replycontroller extends MasterController
         return view('replypage',['replyUp'=>$replyId,'reply_list'=>$reply_lists,'article_list'=>$article_lists,'id'=>$id]);
     }
 
-    public function replyInsert(Request $request){
+    public function replyInsert(Request $request)
+    {
         $rules = ['text' => 'required'];
         $messages = ['required' => '欄位不能空白!'];
         $validator = Validator::make($request->all(), $rules, $messages);
         $reply = new Reply();
         if ($validator->passes()) {
-            $insert = $reply->insert($request->input('text'),$request->input('article_id'));
-            return redirect()->route('reply',['id'=>$request->input('article_id')])->with('msg','回覆成功');
-        }
-        else{
-            return redirect()->route('reply',['id'=>$request->input('article_id')])->withErrors($validator);
+            $insert = $reply->insert($request->input('text'), $request->input('article_id'));
+            return redirect()->route('reply', ['id' => $request->input('article_id')])->with('msg', '回覆成功');
+        } else {
+            return redirect()->route('reply', ['id' => $request->input('article_id')])->withErrors($validator);
         }
     }
     public function replyDelete($id){

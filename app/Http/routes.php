@@ -21,6 +21,7 @@ Route::post('regist' , 'MemberController@regist_member');
 Route::get('regist/login' , 'MemberController@loginpage')->name('loginpage');
 Route::post('regist/login' , 'MemberController@login');
 Route::get('regist/logout' , 'MemberController@logout');
+Route::post('reply/delete/{id}' , 'ReplyController@replyUpdate');
 Route::get('reply/{id}/{replyId?}' , 'ReplyController@reply')->name('reply');
 Route::post('reply/update' , 'ReplyController@replyUpdate');
 Route::post('reply/insert' , 'ReplyController@replyInsert');
