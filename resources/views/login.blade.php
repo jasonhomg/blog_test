@@ -5,7 +5,7 @@
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
         <table class="table">
-            <thead><font size="20px"> v2~登入會員~ </font></thead>
+            <thead><font size="20px"> v0~登入會員~ </font></thead>
             <tbody>
             <tr>
                 <td>帳號</td><td><input type="text" name="login" /></td>
